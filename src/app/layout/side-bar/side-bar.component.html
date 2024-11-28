@@ -1,0 +1,65 @@
+<!-- <mat-sidenav-container class="sidenav-container">
+    
+    <mat-sidenav #sidenav mode="side" [opened]="isVisible" class="custom-sidenav">
+      <h3 class="sidenav-header">Filters</h3> 
+      <mat-selection-list #options>
+        @for (filter of filters; track filter) {
+          <mat-list-option>{{filter}}</mat-list-option>
+        }
+      </mat-selection-list>
+    </mat-sidenav> 
+    <mat-sidenav-content>
+      <button mat-button (click)="toggleSidenav(sidenav)">Toggle Filters</button>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->
+
+  <mat-sidenav-container>
+    <mat-sidenav class="mat-elevation-z8" opened mode="side">
+        
+        <mat-list-item>
+            <a class="menu-icons">
+              <mat-icon>house</mat-icon>
+              <span>Home</span>
+            </a>
+          </mat-list-item>
+          <mat-list-item>
+            <a class="menu-icons">
+              <mat-icon>person</mat-icon>
+              <span>Profile</span>
+            </a>
+          </mat-list-item>
+          <mat-list-item>
+            <a class="menu-icons">
+              <mat-icon>info</mat-icon>
+              <span>Information</span>
+            </a>
+          </mat-list-item>
+      
+          <mat-divider></mat-divider>
+      
+          <mat-list-item>
+            <a class="menu-icons">
+              <mat-icon>help</mat-icon>
+              <span>Help</span>
+            </a>
+          </mat-list-item>
+      
+          <div class="bottom-nav">
+            <mat-divider></mat-divider>
+          
+            <mat-list-item>
+              <a class="menu-icons">
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+              </a>
+            </mat-list-item>
+          </div>
+    </mat-sidenav>
+    <mat-sidenav-content> 
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+   <!-- <mat-nav-list> -->
+    
+      <!-- </mat-nav-list> -->
